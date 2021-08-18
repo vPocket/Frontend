@@ -1,10 +1,14 @@
-
+import Header from './LandingPage/Header';
+import Footer from './Footer/Footer';
+import LandingPage from './LandingPage/Landing';
 
 function App() {
   return (
-    <div>
-      Hi
-    </div>
+  <div>
+  <Header></Header>
+  <LandingPage></LandingPage>
+  <Footer></Footer>
+  </div>
   );
 }
 
