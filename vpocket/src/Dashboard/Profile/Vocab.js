@@ -1,9 +1,9 @@
 import Card from "./Card";
 function Vocab(){
     return(
-        <Card className="">
+        <Card class="bg-green-200">
             <div class="">
-                Hello
+                Vocab
             </div>
         </Card>
     )

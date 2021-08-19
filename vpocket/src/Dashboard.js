@@ -1,10 +1,10 @@
-import Date from "./Dashboard/date.js";
+import Date from "./Dashboard/Date";
 import Dictionary from "./Dashboard/Dictionary";
 import Streak from "./Dashboard/Streak";
 import Reading from "./Dashboard/Reading";
 import Homework from "./Dashboard/Homework";
 import Challenge from "./Dashboard/Challenge";
-import Games from "./Dashboard/Game";
+import Game from "./Dashboard/Game";
 import Profile from "./Dashboard/Profile";
 
 function Dashboard(){
@@ -16,7 +16,7 @@ function Dashboard(){
         <Reading/>
         <Homework/>
         <Challenge/>
-        <Games/>
+        <Game/>
         <Profile/>
         </div>
     );

@@ -1,8 +1,10 @@
 import Card from "./Card";
 function Challenge(){
     return(
-        <Card className="">
-        
+        <Card class="bg-yellow-200">
+            <div>
+                Challenge
+            </div>
         </Card>
     )
 }

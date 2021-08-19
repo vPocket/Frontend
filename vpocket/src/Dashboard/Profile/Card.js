@@ -1,10 +1,10 @@
-import "./Card.css";
+// import "./Card.css";
 
 function Card(props) {
-    const classname="Card "+props.class;
+    const classname="font-bold "+props.class;
     return (
-        <div className={classname}>props.children</div>
+        <div class={classname}>{props.children}</div>
     )
-}
+}   
 
 export default Card;
