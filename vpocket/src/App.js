@@ -1,12 +1,12 @@
-import Header from './LandingPage/Header';
-import Footer from './Footer/Footer';
-import LandingPage from './LandingPage/Landing';
+import Header from './Components/LandingPage/Header';
+import Body from './Components/LandingPage/Body';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
   <div>
   <Header></Header>
-  <LandingPage></LandingPage>
+  <Body></Body>
   <Footer></Footer>
   </div>
   );

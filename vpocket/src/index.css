@@ -1,9 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster+Two&display=swap');
+
+@layer base {
+  h1{
+    @apply text-3xl;
+  }
+  h2{
+    @apply text-2xl;
+  }
+  @font-face {
+    font-family: Lobster Two, Lato;
+  }
+}
 
 @layer components {
   .btn-green {
-    @apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded;
+    @apply font-serif bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded;
+  }
+  .vdo-box{
+    @apply box-border border-4 shadow-md w-80 h-64;
   }
 }
+

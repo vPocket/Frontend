@@ -1,21 +1,17 @@
 import React from 'react';
 
-function Landing() {
+function Body() {
   return (
     <div>
-      <div>
-        <div>
-          <p>vPocket.com</p>
-          <button class="btn-green">Login</button>
-        </div>
+      <div class="">
 
         <div>
-          <h2>Welcome to vPocket.com</h2>
-          <p>
+          <h1>Welcome to vPocket.com</h1>
+          <h2>
             The most intelligent way to create your own stack of vocabulary.
-          </p>
+          </h2>
           <p>
-            vPocket.com is not a extension Lorem ipsum dolor sit amet,
+            vPocket.com is not a extension estas ocupada mucho Lorem ipsum dolor sit amet,
             consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
             exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
@@ -27,16 +23,17 @@ function Landing() {
           <button class="btn-green">Add to your Browser</button>
         </div>
 
-        <div>
+        <div class="vdo-box">
           <img alt="logo" />
         </div>
+
       </div>
 
       <div>
         <div>
           <h2>Stuck at some word?</h2>
 
-          <div>
+          <div class="vdo-box">
             <img alt="logo" />
           </div>
 
@@ -63,14 +60,18 @@ function Landing() {
               tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
               veniam, quis nostrum exercitationem
             </p>
-            <img alt="logo" />
+            <div class="vdo-box">
+              <img alt="logo" />
+            </div>
+            
           </div>
 
           <div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
               tempor incidunt ut labore et dolore magna aliqua.
-              <br></br>Lorem ipsum dolor sit amet, consectetur adipisci elit,
+              <br></br>
+              Lorem ipsum dolor sit amet, consectetur adipisci elit,
               sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
             </p>
             <button class="btn-green">Find your Key</button>
@@ -79,8 +80,46 @@ function Landing() {
       </div>
 
       <div>
+
+        <h2>Bored of old school method of learning things?</h2>
         <div>
-          <h2>Last, but not least</h2>
+          <img class="vdo-box" alt="logo"/>
+        </div>
+
+        <div>
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+          <br></br>
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+          </p>
+
+          <button class="btn-green">Play Now!</button>
+        </div>
+
+      </div>
+
+      <div>
+      
+        <h2>Want a brushup of vocab?</h2>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrum exercitationem ullam corporis suscipit</p>
+
+          <button class="btn-green">Dare to complete challenge?</button>
+
+        </div>
+        
+        <div>
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit
+          </p>
+        </div>
+
+      </div>
+
+      <div>
+        <div>
+          <h1>Last, but not least</h1>
         </div>
         <div>
           <p>
@@ -93,10 +132,9 @@ function Landing() {
           </p>
         </div>
         <button class="btn-green">Get started!</button>
-        <div>{/* include logos from social media */}</div>
       </div>
     </div>
   );
 }
 
-export default Landing;
+export default Body;
