@@ -22,5 +22,8 @@
   .vdo-box{
     @apply box-border border-4 shadow-md w-80 h-64;
   }
+  .two-partition{
+    @apply grid grid-cols-2 gap-6;
+  }
 }
 

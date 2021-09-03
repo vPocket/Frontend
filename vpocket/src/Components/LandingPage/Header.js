@@ -1,3 +1,8 @@
+import Button from '../UI/Button';
+
+const LoginHandler=(event)=>{
+  return;
+}
 
 function Header() {
   return (
@@ -7,7 +12,7 @@ function Header() {
           <h2>vPocket.com</h2>
         </div>
         <div>
-          <button class="btn-green"><p class="">Login</p></button>
+          <Button class="btn-green" type="" onClick={LoginHandler}><p class="">Login</p></Button>
         </div> 
       </div>
     </div>

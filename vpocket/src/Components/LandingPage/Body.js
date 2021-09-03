@@ -1,9 +1,30 @@
 import React from 'react';
+import Button from '../UI/Button';
+
 
 function Body() {
+  const addToBrowserHander=(event)=>{
+    return;
+  }
+  const exploreDictHander=(event)=>{
+    return;
+  }
+  const findKeyHander=(event)=>{
+    return;
+  }
+  const playGameHander=(event)=>{
+    return;
+  }
+  const dareToChallengeHander=(event)=>{
+    return;
+  }
+  const grabSeatHander=(event)=>{
+    return;
+  }
+
   return (
     <div>
-      <div class="">
+      <div class="two-partition">
 
         <div>
           <h1>Welcome to vPocket.com</h1>
@@ -20,7 +41,7 @@ function Body() {
             obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
             mollit anim id est laborum
           </p>
-          <button class="btn-green">Add to your Browser</button>
+          <Button class="btn-green" type="" onClick={addToBrowserHander}>Add to your Browser</Button>
         </div>
 
         <div class="vdo-box">
@@ -29,9 +50,10 @@ function Body() {
 
       </div>
 
-      <div>
-        <div>
-          <h2>Stuck at some word?</h2>
+  
+
+      <h2>Stuck at some word?</h2>
+        <div class="two-partition">
 
           <div class="vdo-box">
             <img alt="logo" />
@@ -47,13 +69,16 @@ function Body() {
               nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
-            <button class="btn-green">Explore Dictionary</button>
+            <Button class="btn-green" type="" onClick={exploreDictHander}>Explore Dictionary</Button>
           </div>
+
         </div>
 
-        <div>
-          <h2>Some words can be tricky!</h2>
 
+        <h2>Some words can be tricky!</h2>
+
+        <div class="two-partition">
+          
           <div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
@@ -74,14 +99,16 @@ function Body() {
               Lorem ipsum dolor sit amet, consectetur adipisci elit,
               sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
             </p>
-            <button class="btn-green">Find your Key</button>
+            <Button class="btn-green" type="" onClick={findKeyHander}>Find your Key</Button>
           </div>
+
         </div>
-      </div>
 
-      <div>
+      <h2>Bored of old school method of learning things?</h2>
 
-        <h2>Bored of old school method of learning things?</h2>
+      <div class="two-partition">
+
+        
         <div>
           <img class="vdo-box" alt="logo"/>
         </div>
@@ -93,19 +120,21 @@ function Body() {
           Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
           </p>
 
-          <button class="btn-green">Play Now!</button>
+          <Button class="btn-green" type="" onClick={playGameHander}>Play Now!</Button>
         </div>
 
       </div>
 
-      <div>
+      <h2>Want a brushup of vocab?</h2>
+
+      <div class="two-partition">
       
-        <h2>Want a brushup of vocab?</h2>
+        
         <div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
           veniam, quis nostrum exercitationem ullam corporis suscipit</p>
 
-          <button class="btn-green">Dare to complete challenge?</button>
+          <Button class="btn-green" type="" onClick={dareToChallengeHander}>Dare to complete challenge?</Button>
 
         </div>
         
@@ -117,7 +146,7 @@ function Body() {
 
       </div>
 
-      <div>
+      <div class="two-partition">
         <div>
           <h1>Last, but not least</h1>
         </div>
@@ -131,8 +160,10 @@ function Body() {
             tempor incidunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <button class="btn-green">Get started!</button>
       </div>
+
+      <Button class="btn-green" type="" onClick={grabSeatHander}>Get started!</Button>
+
     </div>
   );
 }
