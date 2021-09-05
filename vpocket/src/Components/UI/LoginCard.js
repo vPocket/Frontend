@@ -27,6 +27,7 @@ function LoginCard(props){
                 title:"Weak Password!",
                 Message:"Password must be 8 or more character long!!",
             })
+            return;
         }
         if(enteredPassword!==DummyPassword || enteredEmail!==DummyEmail){
             setError({
@@ -34,6 +35,7 @@ function LoginCard(props){
                 Message:"Sorry, your email or password is incorrect.",
 
             })
+            return;
         }
         props.onSubmitForm(enteredEmail,enteredPassword);
         setEmail('');

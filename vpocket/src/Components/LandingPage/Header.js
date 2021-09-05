@@ -9,10 +9,10 @@ function Header() {
     <div class="mx-12 my-8">
       <div class="flex flex-row md:flex-row flex-nowrap">
         <div class="flex-auto">
-          <h2>vPocket.com</h2>
+          <h2 class="font-bold">vPocket.com</h2>
         </div>
         <div>
-          <Button class="btn-green" type="" onClick={LoginHandler}><p class="">Login</p></Button>
+          <Button class="btn-green" type="" onClick={LoginHandler}>Login</Button>
         </div> 
       </div>
     </div>

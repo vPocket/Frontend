@@ -1,5 +1,6 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 import Button from '../UI/Button';
+import ReactDom from 'react-dom';
 
 
 function Body() {
@@ -23,129 +24,147 @@ function Body() {
   }
 
   return (
-    <div>
+    <>
+      {ReactDom.createPortal(<h1 class="portal-word">No more googling to get meaning</h1>, document.getElementById('background-text1'))}
+      {ReactDom.createPortal(<h1 class="portal-word">No more overlook for uncommon words</h1>, document.getElementById('background-text2'))}
+      {ReactDom.createPortal(<h1 class="portal-word">No more bored learning methods!!</h1>, document.getElementById('background-text3'))}
+
       <div class="two-partition">
 
         <div>
           <h1>Welcome to vPocket.com</h1>
-          <h2>
+          <h2 class="my-6">
             The most intelligent way to create your own stack of vocabulary.
           </h2>
-          <p>
-            vPocket.com is not a extension estas ocupada mucho Lorem ipsum dolor sit amet,
-            consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
-            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
-            ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum
+          <p class="my-14">
+            vPocket.com is not just a extension, it provide a platform
+            to learn, remember and frame a wordby getting its meaning
+            which comes from collection of world largest and smartest dictonary
+            with an adaptive learning game help you to master words out of your pocket.
+            <br />
+            <br />
+            So, start filling your pocket.
           </p>
-          <Button class="btn-green" type="" onClick={addToBrowserHander}>Add to your Browser</Button>
+
+          <button class="btn-green" type="" onClick={addToBrowserHander}>Add to your Browser</button>
         </div>
-
-        <div class="vdo-box">
-          <img alt="logo" />
-        </div>
-
-      </div>
-
-  
-
-      <h2>Stuck at some word?</h2>
-        <div class="two-partition">
-
-          <div class="vdo-box">
+        <div class="flex items-center justify-end">
+          <span class="vdo-box">
             <img alt="logo" />
-          </div>
-
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute
-              iure reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <Button class="btn-green" type="" onClick={exploreDictHander}>Explore Dictionary</Button>
-          </div>
-
+          </span>
         </div>
 
 
-        <h2>Some words can be tricky!</h2>
+      </div>
 
-        <div class="two-partition">
-          
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrum exercitationem
-            </p>
-            <div class="vdo-box">
+
+
+      <h2 class="text-center my-20">Stuck at some word out of your vocabulary?</h2>
+      <div class="two-partition">
+
+        <div class="flex items-center justify-start">
+          <span class="vdo-box">
+            <img alt="logo" />
+          </span>
+        </div>
+
+        <div>
+          <p class="my-14">
+            We all are humans, not a machine. Our brain will stuck at words which are out of box for our brain.
+            Here we need a stack of good vocablary having a meaningful example of each word for better grasp on that and prevent to stuck next time...
+
+            <br />
+            <br />
+            <br />
+            vPocket have its own smart dictonary which is a combination of world largest and refined dicticnory which not only provide you a meaning also teach pronounciation of word.
+          </p>
+          <button class="btn-green my-10 mx-52" type="" onClick={exploreDictHander}>Explore Dictionary</button>
+        </div>
+
+      </div>
+
+
+      <h2 class="my-20 mx-36">Some words can be tricky to memorise!</h2>
+
+      <div class="two-partition">
+
+        <div>
+          <p>
+            Reading some blog, article or a book and found a word which you have seen before somewhere and feels ‘Deja vu’ with meaning, trying to remembering the meaning but found nothing....
+          </p>
+          <div class="flex items-center justify-start">
+            <span class="vdo-box my-10">
               <img alt="logo" />
-            </div>
+            </span>
+          </div>
+
+        </div>
+
+        <div>
+          <p class="my-10">
+            What’s the problem?
+            <br /><br />
+            vPocket have a solution for your problem, by using machine-learing vPocket helps you to not only provide the exact meaning, it also provide you the synonymy and antonym to create a bunch of keys related to your word.
+            <br /><br />
+            Why?
+            <br /><br />
+            Key, is the solution to open the lock of your brain running behind to get the single meaning of word.You have bunch of similar and disimilar easy words helps you to reachout your goal.
+            <br /><br />
+            Cool!!
+          </p>
+          <button class="btn-green my-10 mx-56" type="" onClick={findKeyHander}>Find your Key</button>
+        </div>
+
+      </div>
+
+      <h2 class="text-center my-20">Bored of old school method of learning things?</h2>
+
+      <div class="two-partition">
+
+        <div class="flex items-center justify-start">
+          <span class="vdo-box my-10">
+            <img alt="logo" />
+          </span>
+        </div>
+
+        <div>
+          <p class="my-10">
+          Don’t you think, boring method of learing is a great barrier in path of developing skills?That’s why, we introduce a method of learning used for toddlers, to increase a productivity of learning in short span of time.
             
-          </div>
-
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-              tempor incidunt ut labore et dolore magna aliqua.
-              <br></br>
-              Lorem ipsum dolor sit amet, consectetur adipisci elit,
-              sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-            </p>
-            <Button class="btn-green" type="" onClick={findKeyHander}>Find your Key</Button>
-          </div>
-
-        </div>
-
-      <h2>Bored of old school method of learning things?</h2>
-
-      <div class="two-partition">
-
+          Why’s  that?
         
-        <div>
-          <img class="vdo-box" alt="logo"/>
-        </div>
-
-        <div>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-          <br></br>
-          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+          Games!!
+        
+          Exactly, games helps to keep involve ourse Exactly, games helps to keep involve ourselves in learning and provide a push to our goals which are levels of learning and also earn ranks for completing your stack levels of vocab.
           </p>
 
-          <Button class="btn-green" type="" onClick={playGameHander}>Play Now!</Button>
+          <button class="btn-green my-10 mx-60" type="" onClick={playGameHander}>Play Now!!</button>
         </div>
 
       </div>
 
-      <h2>Want a brushup of vocab?</h2>
+
+      <h2 class="mx-36">Want a brushup of vocab?</h2>
 
       <div class="two-partition">
-      
-        
         <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrum exercitationem ullam corporis suscipit</p>
+          <p class="my-10">
+          vPocket provides you a daily local challenges,  vPocket provides you a daily local challenges, which brushup your
+          vobalary pocket helps to build a strong stack of words, i.e. no chance of forgetting words and loosing a word from your vocab.
+          </p>
 
-          <Button class="btn-green" type="" onClick={dareToChallengeHander}>Dare to complete challenge?</Button>
-
+          <button class="btn-green my-10 mx-40" type="" onClick={dareToChallengeHander}>Dare to complete challenge?</button>
         </div>
-        
         <div>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit
+          <p class="my-24">
+          Join weekly global contest, where you can play with your friends and peoples like you, to earn global ranks and get to know your height of stack by using your shelves of pocket.
+          <br />
+          Begin your Journey today!!
           </p>
         </div>
 
       </div>
-
+        
       <div class="two-partition">
         <div>
           <h1>Last, but not least</h1>
@@ -162,9 +181,11 @@ function Body() {
         </div>
       </div>
 
-      <Button class="btn-green" type="" onClick={grabSeatHander}>Get started!</Button>
+      <div class="flex items-align justify-center my-20">
+        <button class="btn-green" type="" onClick={grabSeatHander}>Get started!</button>
+      </div>
 
-    </div>
+    </>
   );
 }
 
