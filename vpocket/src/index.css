@@ -1,16 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster+Two&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster+Two&display=swap");
 
 @layer base {
-  h1{
-    @apply text-4xl;
+  h1 {
+    @apply text-5xl;
   }
-  h2{
-    @apply text-3xl text-gray-700;
+  h2 {
+    @apply text-4xl text-gray-700;
   }
-  p{
+  p {
     @apply text-xl text-gray-500;
   }
   @font-face {
@@ -22,16 +22,11 @@
   .btn-green {
     @apply font-serif bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded;
   }
-  .vdo-box{
+  .vdo-box {
     @apply box-border border-4 shadow-md text-center w-96 h-80;
   }
-  .two-partition{
+  .two-partition {
     @apply grid grid-cols-2 gap-6 mx-32 my-10 p-4;
   }
-  .portal-word{
-    font-size: 803%;
-    line-height: 106%;
-    font-weight: 900;
-  }
+  
 }
-

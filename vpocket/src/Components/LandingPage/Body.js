@@ -1,5 +1,6 @@
 import React,{Fragment} from 'react';
 import Button from '../UI/Button';
+import '../styles/landingpage.css';
 import ReactDom from 'react-dom';
 
 
@@ -46,7 +47,7 @@ function Body() {
             So, start filling your pocket.
           </p>
 
-          <button class="btn-green" type="" onClick={addToBrowserHander}>Add to your Browser</button>
+          <Button class="btn-green" type="" onClick={addToBrowserHander}>Add to your Browser</Button>
         </div>
         <div class="flex items-center justify-end">
           <span class="vdo-box">
@@ -78,7 +79,7 @@ function Body() {
             <br />
             vPocket have its own smart dictonary which is a combination of world largest and refined dicticnory which not only provide you a meaning also teach pronounciation of word.
           </p>
-          <button class="btn-green my-10 mx-52" type="" onClick={exploreDictHander}>Explore Dictionary</button>
+          <Button class="btn-green my-10 mx-52" type="" onClick={exploreDictHander}>Explore Dictionary</Button>
         </div>
 
       </div>
@@ -112,7 +113,7 @@ function Body() {
             <br /><br />
             Cool!!
           </p>
-          <button class="btn-green my-10 mx-56" type="" onClick={findKeyHander}>Find your Key</button>
+          <Button class="btn-green my-10 mx-56" type="" onClick={findKeyHander}>Find your Key</Button>
         </div>
 
       </div>
@@ -130,15 +131,18 @@ function Body() {
         <div>
           <p class="my-10">
           Don’t you think, boring method of learing is a great barrier in path of developing skills?That’s why, we introduce a method of learning used for toddlers, to increase a productivity of learning in short span of time.
-            
+          <br />
+          <br />
           Why’s  that?
-        
+          <br />
+          <br />
           Games!!
-        
+          <br />
+          <br />
           Exactly, games helps to keep involve ourse Exactly, games helps to keep involve ourselves in learning and provide a push to our goals which are levels of learning and also earn ranks for completing your stack levels of vocab.
           </p>
 
-          <button class="btn-green my-10 mx-60" type="" onClick={playGameHander}>Play Now!!</button>
+          <Button class="btn-green my-10 mx-60" type="" onClick={playGameHander}>Play Now!!</Button>
         </div>
 
       </div>
@@ -153,7 +157,7 @@ function Body() {
           vobalary pocket helps to build a strong stack of words, i.e. no chance of forgetting words and loosing a word from your vocab.
           </p>
 
-          <button class="btn-green my-10 mx-40" type="" onClick={dareToChallengeHander}>Dare to complete challenge?</button>
+          <Button class="btn-green my-10 mx-40" type="" onClick={dareToChallengeHander}>Dare to complete challenge?</Button>
         </div>
         <div>
           <p class="my-24">
@@ -165,24 +169,24 @@ function Body() {
 
       </div>
         
-      <div class="two-partition">
-        <div>
-          <h1>Last, but not least</h1>
+      <div class="grid grid-cols-5 gap-8 mx-32 my-10 p-4">
+        <div class="col-span-1 m-6">
+          <h1 class="text-7xl text-gray-700">Last, but not least</h1>
         </div>
-        <div>
+        <div class="col-span-2 mt-5">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-            tempor incidunt ut labore et dolore magna aliqua.
+          We are going to start learing english for our premium users, any user feels himself behind in a journey of learning global language English, 
           </p>
+        </div>
+        <div class="col-span-2 mt-24">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-            tempor incidunt ut labore et dolore magna aliqua.
+          The program is just for you, where you start from a very beginning level and with patience and time you will become master in speaking and writing your own words.
           </p>
         </div>
       </div>
 
       <div class="flex items-align justify-center my-20">
-        <button class="btn-green" type="" onClick={grabSeatHander}>Get started!</button>
+        <Button class="btn-green" type="" onClick={grabSeatHander}>Get started!</Button>
       </div>
 
     </>
